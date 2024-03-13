@@ -1,0 +1,17 @@
+
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .image {
+        margin-top: 50px;
+    }
+
+    button {
+        margin-top: 50px;
+    }
+}

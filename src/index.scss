@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap');
+@import-normalize;
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #F8F8F8;
+  font-family: Nunito;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  background-color: #F8F8F8;
+  border: 1px solid #D0CFCF
+
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #7E7E7E;
+
+}
+
+button {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 100px;
+  height: 34px;
+  border-radius: 80px;
+  cursor: pointer;
+  border: none;
+  background-color: #F4E041;
+  
+  &:hover {
+    background-color: #FFE302;
+
+  }
+  &:disabled {
+    background-color: #B4B4B4;
+    color: white ;
+  }
+}

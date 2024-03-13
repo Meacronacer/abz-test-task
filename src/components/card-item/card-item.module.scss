@@ -1,0 +1,112 @@
+
+
+.card {
+    height: 254px;
+    width: 370px;
+    background-color: white;
+
+    .cardInner {
+        height: 254px;
+        width: 370px;
+
+        img {
+            margin-top: 20px;
+            margin-left: 150px;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+.userInfo {
+    position: relative;
+    padding: 0 20px 0 20px;
+    div  {
+        text-overflow: ellipsis;  // this line adds the ellipsis
+        cursor: pointer;   
+        word-break: break-all;
+        overflow:hidden;         // this hides the overflowing text
+        white-space: nowrap;
+
+        .tooltiptext {
+            visibility: hidden;
+            font-size: 16px;
+            width: fit-content;
+            background: #000000DE;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 5px;
+
+            /* Position the tooltip */
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        &:hover .tooltiptext {
+            visibility: visible;
+        }
+    }
+    
+    .name {
+        margin-top: 20px;
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+    .pos {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .card {
+        width: 282px;
+        .cardInner {
+            width: 282px;
+    
+            img {
+                margin-left: 106px;
+            }
+        }
+    }
+ 
+
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 344px;
+        .cardInner {
+            width: 344px;
+            img {
+                margin-left: 137px;
+            }
+        }
+    }
+   
+
+}
+
+@media (max-width: 360px) {
+    .card {
+        width: 328px;
+
+        .cardInner {
+            width: 328px;
+
+            img {
+                margin-left: 129px;
+            }
+        }
+    }
+
+}
